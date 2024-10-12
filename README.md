@@ -1,4 +1,4 @@
-# ODA - Projeto Django
+# ODA - Projeto Inegrador 
 
 Este é o projeto Django chamado **ODA**.
 

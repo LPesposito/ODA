@@ -1,0 +1,29 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Seu ODA</title>
+    <link rel="stylesheet" href={% static "homepage/style.css" %}>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src={%static "homepage/image/banner-oda.png"%} alt="banner-oda">
+            <div class="text-overlay">Seja bem-vindo ao seu <br>
+            Objeto Digital<br>de Aprendizagem
+            <button><a href="/cursos.html">Cursos</a></button></div>
+            <div class="clear"></div>
+        </div>
+    </header>
+    <footer>
+        <div class="footer">
+            <p>&copy2024 | Todos os Direitos Reservados</p>
+        </div>
+    </footer>
+</body>
+</html>

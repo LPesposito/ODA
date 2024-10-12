@@ -1,6 +1,5 @@
 # ODA - Projeto Inegrador 
 
-Este é o projeto Django chamado **ODA**.
 
 ## Como rodar o projeto
 

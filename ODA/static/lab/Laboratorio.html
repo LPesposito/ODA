@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratório Virtual de Ciências</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="containerWelcome">
+        
+        <h1>Bem Vindos</h1>
+        <h2>Neste ambiente vocês poderam colocar em prática os seus conhecimentos com alguns exercícios 
+            didáticos, aproveitem!</h2>
+
+    </div>
+
+    <div class="containerLaboratorio">
+        <h1>Laboratório Virtual de Ciências</h1>
+        <h2>Simulação do Ciclo da Água</h2>
+
+        <div class="experiment">
+            <div class="element" id="water">
+                <img src="water.jpg" alt="Água">
+                <p>Água</p>
+            </div>
+            <div class="element" id="heat">
+                <img src="sun.jpg" alt="Calor">
+                <p>Calor</p>
+            </div>
+            <div class="element" id="evaporation">
+                <img src="cloud.jpg" alt="Evaporação">
+                <p>Evaporação</p>
+            </div>
+            <div class="element" id="condensation">
+                <img src="rain.jpg" alt="Condensação">
+                <p>Condensação</p>
+            </div>
+        </div>
+
+        
+
+        <div id="result">
+            <p>Resultado: <span id="experiment-result">Nenhum experimento em andamento.</span></p>
+        </div>
+
+        <button onclick="startExperiment()">Iniciar Experimento</button>
+
+    </div>
+
+    <!-- Aqui começa o jogo Puzzle -->
+
+
+    <div id="puzzleDescricao">
+
+        <p>Fazer exercícios de raciocínio lógico oferece uma série de benefícios que 
+            impactam tanto o desenvolvimento cognitivo quanto a capacidade de resolver 
+            problemas em diferentes aspectos da vida. Abaixo está alguns exercícios de 
+            raciocínio lógico para você resolver: </p>
+
+    </div>
+
+    <div class="containerPuzzle">
+        <h1>Desafios de Raciocínio Lógico</h1>
+        <h2>Complete a Sequência Lógica</h2>
+
+        <div id="puzzle">
+            <p id="sequence">2, 4, 6, 8, ?</p>
+        </div>
+
+        <div class="options">
+            <button onclick="checkAnswer(0)">10</button>
+            <button onclick="checkAnswer(1)">12</button>
+            <button onclick="checkAnswer(2)">14</button>
+        </div>
+
+        <div id="result">
+            <p><span id="feedback"></span></p>
+        </div>
+
+        <button id="next-puzzle" onclick="nextPuzzle()" style="display:none;">Próximo Desafio</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

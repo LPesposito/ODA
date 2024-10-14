@@ -1,3 +1,4 @@
+# views principais
 from django.shortcuts import render
 
 

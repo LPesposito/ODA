@@ -1,5 +1,6 @@
 from django.db import models
 
+#Model dos usuarios 
 class User(models.Model):
     id = models.UUIDField(primary_key=True)
     first_name = models.CharField(max_length=120)

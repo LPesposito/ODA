@@ -1,3 +1,4 @@
+# views das atividades
 from django.shortcuts import render
 
 

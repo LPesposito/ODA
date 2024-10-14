@@ -3,6 +3,6 @@ from ODA import views
 
 urlpatterns = [
     path("", views.home),
-    path("atividade/lab", views.ativ_lab, name="Virtual Lab"),
-    path("atividades",views.atividades, name="atividades")
+    path("atividades/lab", views.ativ_lab, name="Virtual Lab"),
+    path("atividades", views.atividades, name="atividades"),
 ]

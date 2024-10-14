@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Teste{% endblock title %}
+
+{% block content %}
+    <div>
+        <h3>Esta pagina é de teste</h3>
+        <h3>Mais testes</h3>
+        <ul>
+            {% for index in lista %}
+            <li> Abobora: {{index}} </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock content %}

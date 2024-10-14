@@ -7,14 +7,21 @@
     {% load bootstrap5 %}
     {% bootstrap_css %}
     {% bootstrap_javascript %}
+    {%load static%}
 </head>
 
 <body>
-    <div class="container">
-        <h1>Pratique!</h1>
-    </div>
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="{% static "lab/cloud.jpg"%}">
+            </a>
+        </div>
+    </nav> 
     
-    {% block content %}{% endblock content %}
+    {% block content %}
+    
+    {% endblock content %}
 </body>
 
 </html>

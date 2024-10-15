@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    {% load static %}
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laboratório Virtual de Ciências</title>
-    <link rel="stylesheet" href="{% static 'lab/styles.css' %}">
-</head>
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Laboratório Virtual de Ciências{% endblock title %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'lab/styles.css' %}">
+{% endblock head %}
+
+{% block content %}
 <body>
 
     <div class="containerWelcome">
@@ -80,4 +81,5 @@
 
     <script src="{% static 'lab/script.js' %}"></script>
 </body>
-</html>
+
+{% endblock content %}

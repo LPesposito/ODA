@@ -2,11 +2,17 @@
 {% block title %}Atividades{% endblock title %}
 
 {% block content %}
-
-
-<h1>Atividades</h1>
-<ul>
-    <li><a href={% url "lab" %}>Laboratorio Virtual</a></li>
-</ul>
-
+<div class="container py-5">
+    <h1 class="text-center mb-4">Atividades</h1>
+    <ul class="list-unstyled text-center">
+        <li>
+            <a href="{% url 'lab' %}" class="btn btn-primary btn-lg rounded-pill shadow" style="background-color: #add8e6; color: #004080; border: none;">
+                Laboratório Virtual
+            </a>
+        </li>
+    </ul>
+</div>
 {% endblock content %}
+<footer class="bg-dark text-white text-center py-3 mt-auto">
+    <p class="mb-0">&copy; 2024 | Todos os Direitos Reservados</p>
+</footer>
